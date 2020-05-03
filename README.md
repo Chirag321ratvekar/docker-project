@@ -15,4 +15,8 @@
      3 . MYSQL
      4 . wordpress
 # By using this repository :
-    
+     1 . pull images from DockerHub
+     2 . docker pull mysql
+     3 . docker pull wordpress:5.1.1-php7.3-apache
+     4 . yum install mysql & wordpress:5.1.1-php7.3-apache
+     
