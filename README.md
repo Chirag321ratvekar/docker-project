@@ -33,9 +33,15 @@
         docker pull mysql:5.7 -> image for mysql
         docker pull wordpress:5.1.1-php7.3-apache -> image for wordpress
 # Then create the Volumes :
-        docker volume create
-        docker volume create
- 
+         wordpress: wp_storage
+                docker volume create wp_storage
+        db: mysql_storage
+                docker volume create mysql_storage
+# The MySQL setup :
+        docker -d -it -e MYSQL_ROOT_PASSWORD=(....password....) -e MYSQL_USER=(..username..) -e MYSQL_PASSWORD=(..password..) -e MYSQL_DATABASE=(..database_name..) --name dbos mysql:5.7
+        
+# Insertion of Docker-Compose-File :
+          In my case docker-compose.yml
  
  
 
