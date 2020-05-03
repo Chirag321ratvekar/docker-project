@@ -20,3 +20,24 @@
      3 . docker pull wordpress:5.1.1-php7.3-apache
      4 . yum install mysql & wordpress:5.1.1-php7.3-apache
      
+# Docker Installation on Redhat(RHEL8) :
+    Configure yum by adding docker.repo and root.repo inside the /etc/yum.repos.d for local installation.
+    Next , run command yum install docker-ce --nobest
+# To Start Docker services :
+   $ sudo systemctl start docker
+   
+   After installation of the above :
+           sudo systemctl start docker
+           sudo systemctl enable docker
+# Download the following Images from docker hub to use :
+        docker pull mysql:5.7 -> image for mysql
+        docker pull wordpress:5.1.1-php7.3-apache -> image for wordpress
+# Then create the Volumes :
+        docker volume create
+        docker volume create
+ 
+ 
+ 
+
+
+   
