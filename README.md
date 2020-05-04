@@ -26,8 +26,10 @@
   - Configuration of yum :
     - it is not configured by default .
       - First we have to go to yum.repos.d :
-           gedit /etc/yum.repos.d/root.repo
+           
+            gedit /etc/yum.repos.d/root.repo
       - in root.repo:
+      
             [dvd1]
             baseurl = file:///run/media/root/RHEL-8-0-0-BaseOS-x86_64/AppStream
             gpgcheck = 0
@@ -37,7 +39,9 @@
             baseurl = file:///run/media/root/RHEL-8-0-0-BaseOS-x86_64/AppStream
             gpgcheck = 0
     - After : 
-        yum repolist
+       
+            yum repolist
+            
   - Configuration of yum for docker : 
     - in docker.repo :
             [docker]
