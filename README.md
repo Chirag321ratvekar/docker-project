@@ -62,19 +62,13 @@
                      docker-compose.yml        
                 
 # Running of Docker Compose:                
-       - Go to the directory where is your docker compose yml file located :
-                - cd command.
-                - docker-compose up
-       - images will be pulled if they are not availabel there.         
-                - then go to port where PAT is set of you wordpress you will able to access the wordpress site.
-       - For stop docker compose :
-                - docker compose down
+  - Go to the directory where is your docker compose yml file located :
+    - cd command.
+    - docker-compose up
+  - images will be pulled if they are not availabel there.         
+    - then go to port where PAT is set of you wordpress you will able to access the wordpress site.
+    - For stop docker compose :
+      - docker compose down
       
       
                      
-
- 
- 
-
-
-   
