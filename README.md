@@ -22,7 +22,27 @@
      
 # Docker Installation on Redhat(RHEL8) :
   - Login as root to configure :
-    - command to go to root account -> su -             
+    - command to go to root account -> su -
+  - Configuration of yum :
+    - it is not configured by default .
+      - First we have to go to yum.repos.d :
+           gedit /etc/yum.repos.d/root.repo
+      - in root.repo:
+            [dvd1]
+            baseurl = file:///run/media/root/RHEL-8-0-0-BaseOS-x86_64/AppStream
+            gpgcheck = 0
+
+
+            [dvd2]
+            baseurl = file:///run/media/root/RHEL-8-0-0-BaseOS-x86_64/AppStream
+            gpgcheck = 0
+    - After : 
+        yum repolist
+  - Configuration of yum for docker : 
+    - in docker.repo :
+            [docker]
+            baseurl = https://download.docker.com/linux/centos/7/x86_64/stable/
+            gpgcheck = 0
   - Configure yum by adding docker.repo and root.repo inside the /etc/yum.repos.d for local installation.
     Next , run command yum install docker-ce --nobest
 # To Start Docker services :
