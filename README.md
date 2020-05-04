@@ -69,7 +69,7 @@
 ## The Wordpress setup : 
         docker run -dit -e WORDPRESS_DB_HOST=dbos -e WORDPRESS_DB_USER=chirag -e WORDPRESS_DB_PASSWORD=[..password..] -e WORDPRESS_DB_NAME=mydb -v wp_storage:/var/www/html --name wpos --link dbos wordpress:5.1.1-php7.3-apache
    
-###### find ip :
+#### Find ip :
   - command :
     - ifconfig
         
