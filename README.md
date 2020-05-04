@@ -21,24 +21,24 @@
      4 . yum install mysql & wordpress:5.1.1-php7.3-apache
      
 # Docker Installation on Redhat(RHEL8) :
-    - Login as root to configure :
-              - command to go to root account -> su -             
-    Configure yum by adding docker.repo and root.repo inside the /etc/yum.repos.d for local installation.
+  - Login as root to configure :
+    - command to go to root account -> su -             
+  - Configure yum by adding docker.repo and root.repo inside the /etc/yum.repos.d for local installation.
     Next , run command yum install docker-ce --nobest
 # To Start Docker services :
-   $ sudo systemctl start docker
+  - $ sudo systemctl start docker
    
-   After installation of the above :
-           sudo systemctl start docker
-           sudo systemctl enable docker
+  - After installation of the above :
+    - sudo systemctl start docker
+    - sudo systemctl enable docker
 # Download the following Images from docker hub to use :
-        docker pull mysql:5.7 -> image for mysql
-        docker pull wordpress:5.1.1-php7.3-apache -> image for wordpress
+  - docker pull mysql:5.7 -> image for mysql
+  - docker pull wordpress:5.1.1-php7.3-apache -> image for wordpress
 # Then create the Volumes :
-         - wordpress: wp_storage
-                docker volume create wp_storage
-         - db: mysql_storage
-                docker volume create mysql_storage
+  - wordpress: wp_storage
+    - docker volume create wp_storage
+  - db: mysql_storage
+    - docker volume create mysql_storage
 # The MySQL setup :
         docker -d -it -e MYSQL_ROOT_PASSWORD=(....password....) -e MYSQL_USER=(..username..) -e MYSQL_PASSWORD=(..password..) -e MYSQL_DATABASE=(..database_name..) --name dbos mysql:5.7
         
@@ -46,20 +46,20 @@
         docker run -dit -e WORDPRESS_DB_HOST=dbos -e WORDPRESS_DB_USER=chirag -e WORDPRESS_DB_PASSWORD=[..password..] -e WORDPRESS_DB_NAME=mydb -v wp_storage:/var/www/html --name wpos --link dbos wordpress:5.1.1-php7.3-apache
    
 # find ip :
-      - command :
-                ifconfig
+  - command :
+    - ifconfig
         
 # Installing of Docker-Compose-File :
-        https://docs.docker.com/compose/install
+  - https://docs.docker.com/compose/install
         
-        - To download the current stable release of Docker Compose.
-                $ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o      /usr/local/bin/docker-compose
+  - To download the current stable release of Docker Compose.
+    - $ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o      /usr/local/bin/docker-compose
                 
-        - To Test the installation :
-                $ docker-compose --version docker-compose version 1.25.5
+    - To Test the installation :
+      - $ docker-compose --version docker-compose version 1.25.5
                 
-        - - In my case the file is :
-                     docker-compose.yml        
+      - In my case the file is :
+        - docker-compose.yml        
                 
 # Running of Docker Compose:                
   - Go to the directory where is your docker compose yml file located :
