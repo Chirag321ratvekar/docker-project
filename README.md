@@ -72,6 +72,10 @@
     - docker volume create wp_storage
   - db: mysql_storage
     - docker volume create mysql_storage
+## Create volumes for MYSQL & Wordpress :
+   ![sql_create volume](https://user-images.githubusercontent.com/44314055/81594973-58801300-93df-11ea-99e7-f5417a340eb3.png)
+
+    
 ## The MySQL setup :
         docker -d -it -e MYSQL_ROOT_PASSWORD=(....password....) -e MYSQL_USER=(..username..) -e MYSQL_PASSWORD=(..password..) -e MYSQL_DATABASE=(..database_name..) --name dbos mysql:5.7
         
