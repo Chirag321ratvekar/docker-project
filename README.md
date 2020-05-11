@@ -78,7 +78,11 @@
     
 ## The MySQL setup :
         docker -d -it -e MYSQL_ROOT_PASSWORD=(....password....) -e MYSQL_USER=(..username..) -e MYSQL_PASSWORD=(..password..) -e MYSQL_DATABASE=(..database_name..) --name dbos mysql:5.7
-        
+       
+## To Avoid the loss of data in MYSQL server we need database :
+![sql_database_attach](https://user-images.githubusercontent.com/44314055/81595598-5b2f3800-93e0-11ea-853f-6a3780f5efe1.png)
+
+
 ## The Wordpress setup : 
         docker run -dit -e WORDPRESS_DB_HOST=dbos -e WORDPRESS_DB_USER=chirag -e WORDPRESS_DB_PASSWORD=[..password..] -e WORDPRESS_DB_NAME=mydb -v wp_storage:/var/www/html --name wpos --link dbos wordpress:5.1.1-php7.3-apache
    
