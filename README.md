@@ -60,6 +60,8 @@
   - docker pull wordpress:5.1.1-php7.3-apache -> image for wordpress
   ## MYSQL service started :
   ![sql_1](https://user-images.githubusercontent.com/44314055/81587321-801dae00-93d4-11ea-815c-44ee05b7f18d.png)
+  ## Yum install MYSQL & IP's :
+  ![sql_2](https://user-images.githubusercontent.com/44314055/81594373-697c5480-93de-11ea-81e0-52f52e961b16.png)
 
   
 ## Then create the Volumes :
