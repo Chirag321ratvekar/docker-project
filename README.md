@@ -91,6 +91,10 @@
 #### Find ip :
   - command :
     - ifconfig
+    
+## Wordpress:5.1.1-php7.3-apache :
+![2020-05-11 (2)](https://user-images.githubusercontent.com/44314055/81597385-4902c900-93e3-11ea-8c15-3fd54b93c42b.png)
+
         
 ## Installing of Docker-Compose-File :
   - https://docs.docker.com/compose/install
