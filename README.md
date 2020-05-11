@@ -58,6 +58,10 @@
 ## Download the following Images from docker hub to use :
   - docker pull mysql:5.7 -> image for mysql
   - docker pull wordpress:5.1.1-php7.3-apache -> image for wordpress
+  ## MYSQL service started :
+  ![sql_1](https://user-images.githubusercontent.com/44314055/81587321-801dae00-93d4-11ea-815c-44ee05b7f18d.png)
+
+  
 ## Then create the Volumes :
   - wordpress: wp_storage
     - docker volume create wp_storage
