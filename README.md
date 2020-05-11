@@ -21,6 +21,8 @@
      4 . yum install mysql & wordpress:5.1.1-php7.3-apache
      
 ## Docker Installation on Redhat(RHEL8) :
+![redhat](https://user-images.githubusercontent.com/44314055/81595939-e3add880-93e0-11ea-8c0c-5ad7084c7b80.png)
+
   - Login as root to configure :
     - command to go to root account -> su -
   - Configuration of yum :
