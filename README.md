@@ -63,6 +63,8 @@
   ## Yum install MYSQL & IP's :
   ![sql_2](https://user-images.githubusercontent.com/44314055/81594373-697c5480-93de-11ea-81e0-52f52e961b16.png)
   ![sql_3](https://user-images.githubusercontent.com/44314055/81594642-e0195200-93de-11ea-83be-8c4a52771167.png)
+  ![sql_entrypoint](https://user-images.githubusercontent.com/44314055/81595145-9aa95480-93df-11ea-84e4-f2519d08885e.png)
+
 
   
 ## Then create the Volumes :
